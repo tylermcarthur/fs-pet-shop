@@ -37,16 +37,10 @@ function update() {
                     'kind' : arg[3],
                     'name' : arg[4], 
                 }
-                fs.writeFile("./pets.json", (JSON.stringify(pets)),function (error) {
-                    if(error){
-                        console.error('undefined error')
-                    } else {
-                        console.log('success')
+                fs.writeFile("./pets.json", (JSON.stringify(pets)))
                     }
                 })
             }
-        })
-    }
 }
 
 
